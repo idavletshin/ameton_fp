@@ -1,0 +1,13 @@
+body {
+  color: var(--black);
+  font-family: "Museo Sans", sans-serif;
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 300;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  text-decoration: none;
+  color: inherit;
+}
