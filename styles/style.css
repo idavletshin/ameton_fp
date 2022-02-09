@@ -106,14 +106,14 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left;
-  transform: translateY(-50%);
+  transform: translateY(-59%);
   z-index: 1;
 }
 .support::after {
   position: absolute;
   content: "";
   width: 240px;
-  height: 220px;
+  height: 225px;
   right: 0;
   bottom: 0;
   background-image: url("../images/phone_in_hand.svg");
@@ -139,6 +139,7 @@ body {
   margin: 0 auto;
   font-size: 17px;
   font-weight: 500;
+  line-height: 1.4;
   color: var(--white);
 }
 .support__action-list {
@@ -225,7 +226,7 @@ body {
 .social__item {
   width: 56px;
   height: 56px;
-  margin: 0 7px 14px;
+  margin: 0 7px;
   border-radius: 13px;
   overflow: hidden;
 }
@@ -280,6 +281,9 @@ body {
   }
   .social__desc {
     margin-bottom: calc(8px + 8 * ((100vw - 20rem) / 880));
+  }
+  .social__item {
+    margin-bottom: 14px;
   }
 }
 
@@ -377,6 +381,7 @@ body {
   max-width: 400px;
   font-size: 13px;
   font-weight: 300;
+  line-height: 1.4;
   color: var(--gray-500);
 }
 .reference-item__title + p {
@@ -402,8 +407,8 @@ body {
 .slick-track {
   display: flex;
   align-items: flex-start;
-  margin-left: -24px;
-  margin-right: -24px;
+  /* margin-left: -24px; */
+  /* margin-right: -24px; */
 }
 .slider .slick-arrow {
   position: absolute;
