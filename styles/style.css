@@ -15,6 +15,11 @@ body {
   padding-top: 40px;
 }
 
+.main-inner {
+  flex-grow: 1;
+  padding-top: 20px;
+}
+
 .page-container {
   max-width: 1280px;
   width: 100%;
@@ -68,6 +73,7 @@ body {
   color: var(--black);
   background-color: var(--white);
   border: none;
+  border-radius: 12px;
   text-decoration: none;
   transition: all 0.2s ease 0s;
   cursor: pointer;
@@ -152,7 +158,6 @@ body {
 }
 .support-action-item__button {
   width: 160px;
-  border-radius: 12px;
 }
 .support-action-item__button img {
   margin-right: 8px;
@@ -447,6 +452,7 @@ body {
 }
 .slider-item__column {
   padding: 16px;
+  cursor: pointer;
 }
 .slider-item__column + .slider-item__column {
   min-width: 104px;
@@ -466,5 +472,85 @@ body {
 @media screen and (max-width: 480px) {
   .slider .slick-arrow {
     display: none !important;
+  }
+}
+
+/* стили для блока со статьей  */
+
+.faq-article {
+  max-width: 690px;
+}
+.faq-article__title-wrapper {
+  display: flex;
+  align-items: center;
+}
+.faq-article__title {
+  margin-right: 12px;
+  font-size: 24px;
+  font-weight: 900;
+}
+.faq-article__share {
+  /* display: inline-block; */
+}
+.faq-article__desc {
+  margin-bottom: 40px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.faq-article__title + p {
+  margin-top: 16px;
+}
+.faq-article__feedback {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 13px;
+  font-weight: 700;
+  color: inherit;
+  text-decoration: none;
+}
+.faq-article__list-action {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+.faq-article__item-action {
+  margin: 0 4px 8px;
+}
+.faq-article-item {
+}
+.faq-article-item__button {
+}
+.faq-article-item__button_chat {
+  width: 224px;
+  color: var(--white);
+  background-color: var(--green-300);
+}
+.faq-article-item__button_chat:hover,
+.faq-article-item__button_chat:focus {
+  background-color: var(--green-400);
+}
+.faq-article-item__button_chat:active {
+  background-color: var(--green-500);
+}
+.faq-article-item__button_chat img {
+  margin-right: 8px;
+}
+.faq-article-item__button_phone {
+  width: 48px;
+  height: 48px;
+}
+.faq-article-item__button_mail {
+  width: 48px;
+  height: 48px;
+}
+
+@media screen and (max-width: 375px) {
+  .faq-article-item:nth-child(1) {
+    width: 100%;
+  }
+  .faq-article-item__button_chat {
+    width: 100%;
   }
 }
