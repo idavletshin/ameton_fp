@@ -91,10 +91,11 @@ body {
 .support {
   position: relative;
   margin-bottom: 80px;
-  background: var(--blue);
+  /* background: var(--blue); */
   background-color: var(--blue);
   border-radius: 40px;
   overflow: hidden;
+  filter: none !important;
 }
 .support::before {
   position: absolute;
