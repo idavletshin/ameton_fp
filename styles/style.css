@@ -70,8 +70,8 @@ body {
   line-height: inherit;
   font-weight: 700;
   text-align: center;
-  color: var(--black);
-  background-color: var(--white);
+  color: var(--black, #1a1a1a);
+  background-color: var(--white, #ffffff);
   border: none;
   border-radius: 12px;
   text-decoration: none;
@@ -80,10 +80,10 @@ body {
 }
 .button:hover,
 .button:focus {
-  background-color: var(--gray-200);
+  background-color: var(--gray-200, #eeeeee);
 }
 .button:active {
-  background-color: var(--gray-300);
+  background-color: var(--gray-300, #dddddd);
 }
 
 /* блок со службой поддержки */
@@ -91,8 +91,8 @@ body {
 .support {
   position: relative;
   margin-bottom: 80px;
-  /* background: var(--blue); */
-  background-color: var(--blue);
+  /* background: var(--blue, #95bcea); */
+  background-color: var(--blue, #95bcea);
   border-radius: 40px;
   overflow: hidden;
   filter: none !important;
@@ -134,7 +134,7 @@ body {
   margin-bottom: 4px;
   font-size: 60px;
   font-weight: 900;
-  color: var(--white);
+  color: var(--white, #ffffff);
 }
 .support__desc {
   max-width: 535px;
@@ -142,7 +142,7 @@ body {
   font-size: 17px;
   font-weight: 500;
   line-height: 1.4;
-  color: var(--white);
+  color: var(--white, #ffffff);
 }
 .support__action-list {
   display: flex;
@@ -200,7 +200,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 42px 40px;
-  background-color: var(--white);
+  background-color: var(--white, #ffffff);
   border-radius: 40px;
   box-shadow: 0px 20px 60px rgba(26, 26, 26, 0.05);
 }
@@ -235,7 +235,7 @@ body {
 .social-item__link {
   display: block;
   height: 56px;
-  background-color: var(--gray-100);
+  background-color: var(--gray-100, #f9f9f9);
   background-repeat: no-repeat;
   background-position: center;
   transition: all 0.2s ease 0s;
@@ -266,10 +266,10 @@ body {
 }
 .social-item__link:hover,
 .social-item__link:focus {
-  background-color: var(--gray-200);
+  background-color: var(--gray-200, #eeeeee);
 }
 .social-item__link:active {
-  background-color: var(--gray-300);
+  background-color: var(--gray-300, #dddddd);
 }
 
 @media screen and (max-width: 1200px) {
@@ -370,10 +370,10 @@ body {
 }
 .reference-item__link:hover,
 .reference-item__link:focus {
-  background-color: var(--gray-200);
+  background-color: var(--gray-200, #eeeeee);
 }
 .reference-item__link:active {
-  background-color: var(--gray-300);
+  background-color: var(--gray-300, #dddddd);
 }
 .reference-item__title {
   font-size: 20px;
@@ -384,7 +384,7 @@ body {
   font-size: 13px;
   font-weight: 300;
   line-height: 1.4;
-  color: var(--gray-500);
+  color: var(--gray-500, #949494);
 }
 .reference-item__title + p {
   margin-top: 4px;
@@ -425,7 +425,7 @@ body {
 }
 .slider .slick-arrow.slick-prev {
   left: 0;
-  background-color: var(--white);
+  background-color: var(--white, #ffffff);
   background-image: url("../images/chevron_right_black.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -433,7 +433,7 @@ body {
 }
 .slider .slick-arrow.slick-next {
   right: 0;
-  background-color: var(--white);
+  background-color: var(--white, #ffffff);
   background-image: url("../images/chevron_right_black.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -444,10 +444,10 @@ body {
 }
 .slider .slick-arrow:hover,
 .slider .slick-arrow:focus {
-  background-color: var(--gray-200);
+  background-color: var(--gray-200, #eeeeee);
 }
 .slider .slick-arrow:active {
-  background-color: var(--gray-300);
+  background-color: var(--gray-300, #dddddd);
 }
 .slider__item {
   display: flex;
@@ -473,7 +473,7 @@ body {
 }
 .slider-item__text {
   line-height: 1.4;
-  color: var(--gray-500);
+  color: var(--gray-500, #949494);
 }
 .slider-item__title + p {
   margin-top: 8px;
@@ -533,15 +533,15 @@ body {
 }
 .faq-article-item__button_chat {
   width: 224px;
-  color: var(--white);
-  background-color: var(--green-300);
+  color: var(--white, #ffffff);
+  background-color: var(--green-300, #36ba5f);
 }
 .faq-article-item__button_chat:hover,
 .faq-article-item__button_chat:focus {
-  background-color: var(--green-400);
+  background-color: var(--green-400, #30a856);
 }
 .faq-article-item__button_chat:active {
-  background-color: var(--green-500);
+  background-color: var(--green-500, #2c944d);
 }
 .faq-article-item__button_chat img {
   margin-right: 8px;
